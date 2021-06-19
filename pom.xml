@@ -14,15 +14,7 @@
     <description>Use maven ci friend versions</description>
 
     <properties>
-
         <revision>2021.2.1-0-0-SNAPSHOT</revision>
-
-        <java.version>15</java.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
-
     </properties>
 
     <modules>

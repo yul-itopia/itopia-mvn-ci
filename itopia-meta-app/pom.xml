@@ -8,8 +8,9 @@
 
 	<parent>
         <groupId>com.itopia</groupId>
-        <artifactId>itopia-mvn-ci</artifactId>
+        <artifactId>itopia-parent</artifactId>
         <version>${revision}</version>
+        <relativePath>../itopia-parent/pom.xml</relativePath>
 	</parent>
 
     <artifactId>itopia-meta-app</artifactId>
