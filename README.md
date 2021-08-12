@@ -6,5 +6,5 @@
 | --- |
 
 ``` 
-mvn -Drevision=2021.04-SNAPSHOT clean package
+mvn clean package -Drevision=françois-2021.04-SNAPSHOT
 ```
