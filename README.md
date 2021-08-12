@@ -2,7 +2,7 @@
 
 ## Maven CI Friendly Versions
 
-| ![project-structure](diagrams/project-structure.png "project-structure") |
+| ![project-structure](diagrams/ci-friendly-project-structure.png "project-structure") |
 | --- |
 
 ``` 
