@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.itopia</groupId>
+    <artifactId>tecsys-itopia-starter-parent</artifactId>
+    <version>2021.03-SNAPSHOT</version>
+    <relativePath>../tecsys-itopia-starter-parent</relativePath>
+  </parent>
+  <groupId>com.itopia</groupId>
+  <artifactId>itopia-meta-all</artifactId>
+  <version>2021.03-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+    <module>../itopia-base-app</module>
+    <module>../itopia-base-web</module>
+    <module>../itopia-meta-app</module>
+    <module>../itopia-meta-web</module>
+  </modules>
+</project>

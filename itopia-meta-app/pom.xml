@@ -6,11 +6,12 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-	<parent>
+    <parent>
         <groupId>com.itopia</groupId>
-        <artifactId>itopia-mvn-ci</artifactId>
+        <artifactId>itopia-meta-all</artifactId>
         <version>${revision}</version>
-	</parent>
+        <relativePath>../itopia-meta-all</relativePath>
+    </parent>
 
     <artifactId>itopia-meta-app</artifactId>
     <packaging>jar</packaging>
