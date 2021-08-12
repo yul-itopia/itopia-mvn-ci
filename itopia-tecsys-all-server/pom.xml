@@ -13,7 +13,6 @@
         <relativePath>../itopia-tecsys-all</relativePath>
     </parent>
 
-    <groupId>com.itopia</groupId>
     <artifactId>itopia-tecsys-all-server</artifactId>
     <packaging>jar</packaging>
 

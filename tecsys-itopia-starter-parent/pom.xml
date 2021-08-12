@@ -13,7 +13,6 @@
         <relativePath>../tecsys-itopia-dependencies</relativePath>
     </parent>
 
-    <groupId>com.itopia</groupId>
     <artifactId>tecsys-itopia-starter-parent</artifactId>
     <packaging>pom</packaging>
 
