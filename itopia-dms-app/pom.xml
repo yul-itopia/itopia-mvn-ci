@@ -16,4 +16,13 @@
     <artifactId>itopia-dms-app</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>com.itopia</groupId>
+            <artifactId>itopia-meta-app</artifactId>
+        </dependency>
+
+    </dependencies>
+
 </project>
