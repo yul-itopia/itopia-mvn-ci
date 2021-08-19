@@ -7,19 +7,126 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.itopia</groupId>
-        <artifactId>tecsys-itopia-all</artifactId>
-        <version>${revision}</version>
-        <relativePath>../tecsys-itopia-all</relativePath>
+        <groupId>com.yulikexuan</groupId>
+        <artifactId>core-java-bom</artifactId>
+        <version>2021.03-SNAPSHOT</version>
     </parent>
 
+    <groupId>com.itopia</groupId>
     <artifactId>itopia-tecsys-all</artifactId>
     <packaging>pom</packaging>
+    <version>${revision}</version>
+
+    <properties>
+        <revision>99x-SNAPSHOT</revision>
+        <flatten-maven-plugin.version>1.2.7</flatten-maven-plugin.version>
+    </properties>
+
+    <dependencyManagement>
+
+        <dependencies>
+
+            <dependency>
+                <groupId>com.itopia</groupId>
+                <artifactId>itopia-base-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.itopia</groupId>
+                <artifactId>itopia-base-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.itopia</groupId>
+                <artifactId>itopia-meta-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.itopia</groupId>
+                <artifactId>itopia-meta-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.itopia</groupId>
+                <artifactId>itopia-dms-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
+
+    <build>
+
+        <pluginManagement>
+
+            <plugins>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>flatten-maven-plugin</artifactId>
+                    <version>${flatten-maven-plugin.version}</version>
+                    <configuration>
+                        <updatePomFile>true</updatePomFile>
+                        <flattenMode>resolveCiFriendliesOnly</flattenMode>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>flatten</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <goal>flatten</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>flatten.clean</id>
+                            <phase>clean</phase>
+                            <goals>
+                                <goal>clean</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+            </plugins>
+
+        </pluginManagement>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>flatten-maven-plugin</artifactId>
+            </plugin>
+
+        </plugins>
+
+    </build>
 
     <modules>
+        <module>../itopia-meta-all</module>
+        <module>../itopia-dms-all</module>
         <module>../itopia-tecsys-all-server</module>
         <module>../itopia-tecsys-all-web-war</module>
         <module>../itopia-tecsys-all-ear</module>
     </modules>
+
+    <distributionManagement>
+
+        <repository>
+            <id>packagecloud.releases</id>
+            <url>packagecloud+https://packagecloud.io/cloudlab/release</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>packagecloud.releases</id>
+            <url>packagecloud+https://packagecloud.io/cloudlab/release</url>
+        </snapshotRepository>
+
+    </distributionManagement>
 
 </project>

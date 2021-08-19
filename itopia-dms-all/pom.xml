@@ -8,9 +8,9 @@
 
     <parent>
         <groupId>com.itopia</groupId>
-        <artifactId>tecsys-itopia-all</artifactId>
+        <artifactId>itopia-tecsys-all</artifactId>
         <version>${revision}</version>
-        <relativePath>../tecsys-itopia-all</relativePath>
+        <relativePath>../itopia-tecsys-all</relativePath>
     </parent>
 
     <artifactId>itopia-dms-all</artifactId>
