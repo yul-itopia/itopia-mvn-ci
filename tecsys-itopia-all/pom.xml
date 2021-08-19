@@ -13,12 +13,12 @@
     </parent>
 
     <groupId>com.itopia</groupId>
-    <artifactId>tecsys-itopia-dependencies</artifactId>
+    <artifactId>tecsys-itopia-all</artifactId>
     <packaging>pom</packaging>
     <version>${revision}</version>
 
     <properties>
-        <revision>2021.03-SNAPSHOT</revision>
+        <revision>99x-SNAPSHOT</revision>
         <flatten-maven-plugin.version>1.2.7</flatten-maven-plugin.version>
     </properties>
 
@@ -108,7 +108,9 @@
     </build>
 
     <modules>
-        <module>../tecsys-itopia-starter-parent</module>
+        <module>../itopia-meta-all</module>
+        <module>../itopia-dms-all</module>
+        <module>../itopia-tecsys-all</module>
     </modules>
 
     <distributionManagement>

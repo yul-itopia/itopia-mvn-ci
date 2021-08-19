@@ -8,9 +8,9 @@
 
     <parent>
         <groupId>com.itopia</groupId>
-        <artifactId>tecsys-itopia-starter-parent</artifactId>
+        <artifactId>tecsys-itopia-all</artifactId>
         <version>${revision}</version>
-        <relativePath>../tecsys-itopia-starter-parent</relativePath>
+        <relativePath>../tecsys-itopia-all</relativePath>
     </parent>
 
     <artifactId>itopia-meta-all</artifactId>
