@@ -16,4 +16,18 @@
     <artifactId>itopia-tecsys-all-server</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>com.itopia</groupId>
+            <artifactId>itopia-meta-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.itopia</groupId>
+            <artifactId>itopia-dms-web</artifactId>
+        </dependency>
+
+    </dependencies>
+
 </project>

@@ -23,6 +23,11 @@
             <artifactId>itopia-dms-app</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.itopia</groupId>
+            <artifactId>itopia-meta-web</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

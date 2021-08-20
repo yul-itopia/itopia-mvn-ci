@@ -56,6 +56,24 @@
                 <version>${project.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.itopia</groupId>
+                <artifactId>itopia-dms-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.itopia</groupId>
+                <artifactId>itopia-tecsys-all-server</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.itopia</groupId>
+                <artifactId>itopia-tecsys-all-web-war</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
         </dependencies>
 
     </dependencyManagement>
@@ -114,19 +132,5 @@
         <module>../itopia-tecsys-all-web-war</module>
         <module>../itopia-tecsys-all-ear</module>
     </modules>
-
-    <distributionManagement>
-
-        <repository>
-            <id>packagecloud.releases</id>
-            <url>packagecloud+https://packagecloud.io/cloudlab/release</url>
-        </repository>
-
-        <snapshotRepository>
-            <id>packagecloud.releases</id>
-            <url>packagecloud+https://packagecloud.io/cloudlab/release</url>
-        </snapshotRepository>
-
-    </distributionManagement>
 
 </project>
