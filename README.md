@@ -19,9 +19,9 @@
 
 
 ``` 
-mvn clean package -Drevision=françois-2021.04-SNAPSHOT
+mvn clean package -Drevision=francois-2021.04-SNAPSHOT
 ```
 
 ``` 
-mvn clean package -Drevision=françois-99x-SNAPSHOT
+mvn clean package -Drevision=francois-99x-SNAPSHOT
 ```
